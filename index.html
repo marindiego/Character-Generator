@@ -1,21 +1,56 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <bds />
     <link rel="stylesheet" href="index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="description" content="Character Generator Project" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="BigDevSoon" />
+
     <script src="index.js" defer></script>
     <title>BigDevSoon - Character Generator Project</title>
   </head>
   <body>
-    <!-- Place below is for your own exciting code -->
-    <p>Time to write some code! 👀</p>
-    <!-- Change the [ME] part to your own name/GitHub link -->
-    <div class="footer">
-      <a href="https://bigdevsoon.me" target="_blank" rel="noopener noreferrer"
-        >Project by BigDevSoon</a
-      >
-      |
-      <span>Built with ❤️ by [ME]</span>
-    </div>
+      <main class="main">
+        <section id="character">
+          <h1 id="character-title">Character generator</h1>
+          <div class="character-container">
+            <div class="character-side character__side__left">
+              <div class="character-preview" id="character-preview">
+               <!--Character Image-->
+               <!-- <img src="./assets/character-images-left-side/hair/hair-1.png" alt="" class="character-preview__image hair"> -->
+              </div>
+              <div class="character-actions">
+                <button id="random-button" type="button" class="btn btn__primary">
+                  <span class="icon random-icon"></span>
+                  Random
+                </button>
+                <button id="download-button" type="button" class="btn btn__secondary">
+                  <span class="icon download-icon"></span>
+                  Download
+                </button>
+              </div>
+            </div>
+            <div class="character-side character__side__right">
+              <div class="customizer">
+                <h3 class="customizer-title">Customize Looks</h3>
+                <div id="customizer-options">
+                  <!-- Hair, nouse, mounth, nose -->
+                </div>
+                <div class="customizer-select" id="customizer-select">
+                  <!-- Long hair -->
+                  <!-- Short hair -->
+                  <!-- Eyes option 1 -->
+                  <!-- Eyes option 2 -->
+                  <!-- Eyes option 3 -->
+                  <!-- nose option 1 -->
+                  <!-- nose option 2 -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
   </body>
 </html>

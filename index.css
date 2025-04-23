@@ -1,19 +1,194 @@
-/* This is an example CSS file, feel free to remove/edit it anytime */
-.footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 10px;
-  text-align: center;
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	width: 100%;
+	height: 100vh;
+	font-family: "Roboto", sans-serif;
+	background-color: #d3d9de;
 }
 
-.footer a {
-  font-size: 14px;
-  font-weight: bold;
-  text-decoration: none;
+@font-face {
+	font-family: "Roboto";
+	src: url("./assets/fonts/Roboto-Regular.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
 }
 
-.footer span {
-  font-size: 14px;
+@font-face {
+	font-family: "Roboto";
+	src: url("./assets/fonts/Roboto-Bold.ttf") format("truetype");
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Roboto";
+	src: url("./assets/fonts/Roboto-Black.ttf") format("truetype");
+	font-weight: 900;
+	font-style: normal;
+}
+.main {
+	width: 100%;
+	height: 100%;
+	padding: 100px 0;
+}
+#character {
+	width: 90%;
+	height: 800px;
+	padding: 40px 100px;
+	margin: 0 auto;
+	background-color: rgb(242, 236, 236);
+}
+.character-container {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	width: 100%;
+	height: 80%;
+}
+#character-title {
+	margin: 20px 0;
+	font-size: 3.5rem;
+	font-weight: 700;
+	color: rgb(0, 0, 0);
+}
+.character-side {
+	width: 100%;
+	height: 100%;
+}
+.character-preview {
+	position: relative;
+	width: 450px;
+	height: 500px;
+	background-color: #d3d9de;
+}
+.character-preview__image {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.character-preview__image.eyes {
+	z-index: 3;
+}
+.character-preview__image.hair {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  max-height: 100%;
+  z-index: 2;
+}
+.character-preview__image.nose {
+  z-index: 3;
+}
+.character-preview__image.mouth {
+  z-index: 4;
+}
+.character-preview__image.accessories {
+  z-index: 3;
+}
+.character-preview__image.ears {
+  z-index: 4;
+}
+
+.character-actions {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	height: auto;
+	padding: 20px 0;
+}
+.customizer-title {
+	font-size: 2rem;
+	font-weight: 700;
+	margin: 10px 0;
+	margin-left: 20px;
+}
+#customizer-options {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 20px;
+	width: 100%;
+	height: auto;
+	margin-left: 20px;
+}
+.customizer-select {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+.customizer-option-image {
+	width: 100%;
+	height: 200px;
+	padding: 10px;
+  cursor: pointer;
+}
+.customizer-option-color {
+	width: 150px;
+	height: 150px;
+	border-radius: 30px;
+	margin-left: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+  cursor: pointer;
+}
+/*Buttons */
+.btn {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	width: fit-content;
+	height: 50px;
+	padding: 8px 60px;
+	font-size: 1rem;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 15px;
+	cursor: pointer;
+}
+
+.btn__primary {
+	background-color: rgb(19, 81, 162);
+	color: rgb(255, 255, 255);
+	border: none;
+}
+.btn__secondary {
+	background-color: rgb(241, 233, 233);
+	color: rgb(23, 23, 24);
+	border: 2px solid rgb(43, 44, 46);
+}
+.btn__terciary {
+	font-weight: 500;
+	border-radius: 20px;
+	padding: 15px 30px;
+	background-color: rgb(242, 236, 236);
+	color: rgb(19, 81, 162);
+	border: 2px solid rgb(19, 81, 162);
+}
+
+/*Buttons States */
+.btn__terciary-active {
+	background-color: rgb(19, 81, 162);
+	color: rgb(255, 255, 255);
+}
+/*Icons */
+.icon {
+	width: 20px;
+	height: 20px;
+	mask-size: contain;
+	mask-repeat: no-repeat;
+	mask-position: center;
+}
+.random-icon {
+	mask-image: url("./assets/icons/random-icon.svg");
+	background-color: white;
+}
+.download-icon {
+	mask-image: url("./assets/icons/download-icon.svg");
+	background-color: black;
 }

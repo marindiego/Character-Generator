@@ -4,8 +4,6 @@ Application to customize and create your very own character.
 
 ![Character Generator Project preview image](./project-preview.jpeg)
 
-## Hello to [BigDevSoon](https://bigdevsoon.me/) 👋
-
 Create code that matters! 🤩
 
 Level up your coding skills by building real-world projects with professional designs.
